@@ -7,6 +7,21 @@ int voto, cand1 = 0, cand2 = 0, cand3 = 0, cand4 = 0, cand5 = 0;
 float totalVotos, pCand1, pCand2, pCand3, pCand4, pCand5;
 char nCand1[20], nCand2[20], nCand3[20], nCand4[20], nCand5[20];
 
+printf("Ingrese el nombre del candidato 1\n");
+scanf("%s", nCand1);
+
+printf("Ingrese el nombre del candidato 2\n");
+scanf("%s", nCand2);
+
+printf("Ingrese el nombre del candidato 3\n");
+scanf("%s", nCand3);
+
+printf("Ingrese el nombre del candidato 4\n");
+scanf("%s", nCand4);
+
+printf("Ingrese el nombre del candidato 5\n");
+scanf("%s", nCand5);
+
 do
 {
     printf("Ingrese el candidato que recibió un voto (1, 2, 3, 4, 5) (Terminar = 0))\n");
