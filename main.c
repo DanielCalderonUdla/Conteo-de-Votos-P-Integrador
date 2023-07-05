@@ -27,9 +27,34 @@ do
     printf("Ingrese el candidato que recibió un voto (Para terminar escribir terminar))\n");
     scanf("%s", voto);
 
-    
+    if (strcmp(voto, nCand1) == 0)
+    {
+        cand1++; 
+        printf("Se ha registrado un voto para el Candidato %s\n", nCand1);
+    } else if (strcmp(voto, nCand2) == 0)
+    {
+        cand2++;
+        printf("Se ha registrado un voto para el Candidato %s\n", nCand2);
+    } else if (strcmp(voto, nCand3) == 0)
+    {
+        cand3++;
+        printf("Se ha registrado un voto para el Candidato %s\n", nCand3);
+    } else if (strcmp(voto, nCand4) == 0)
+    {
+        cand4++;
+        printf("Se ha registrado un voto para el Candidato %s\n", nCand4);
+    } else if (strcmp(voto, nCand5) == 0)
+    {
+        cand5++;
+        printf("Se ha registrado un voto para el Candidato %s\n", nCand5);
+    } else if (strcmp(voto, "terminar") == 0)
+    {
+        printf("Gracias por registrar todos los votos, estos son los resultados:\n");
+    } else {
+        printf("Ingrese un candidato valido\n");
+    }
 
-} while (voto != 0);
+} while (strcmp(voto, "terminar") != 0);
 
 totalVotos = cand1 + cand2 + cand3 + cand4 + cand5;
 pCand1 = (cand1 * 100) / totalVotos;
@@ -39,11 +64,11 @@ pCand4 = (cand4 * 100) / totalVotos;
 pCand5 = (cand5 * 100) / totalVotos;
 
 printf("Total de votos: %d\n", (int)totalVotos);
-printf("Votos por el Candidato 1: %d | Porcentaje: %.2f %% \n", cand1, pCand1);
-printf("Votos por el Candidato 2: %d | Porcentaje: %.2f %% \n", cand2, pCand2);
-printf("Votos por el Candidato 3: %d | Porcentaje: %.2f %% \n", cand3, pCand3);
-printf("Votos por el Candidato 4: %d | Porcentaje: %.2f %% \n", cand4, pCand4);
-printf("Votos por el Candidato 5: %d | Porcentaje: %.2f %% \n", cand5, pCand5);
+printf("Votos por el Candidato %s: %d | Porcentaje: %.2f %% \n", nCand1, cand1, pCand1);
+printf("Votos por el Candidato %s: %d | Porcentaje: %.2f %% \n", nCand2, cand2, pCand2);
+printf("Votos por el Candidato %s: %d | Porcentaje: %.2f %% \n", nCand3, cand3, pCand3);
+printf("Votos por el Candidato %s: %d | Porcentaje: %.2f %% \n", nCand4, cand4, pCand4);
+printf("Votos por el Candidato %s: %d | Porcentaje: %.2f %% \n", nCand5, cand5, pCand5);
 
 return 0;
 
