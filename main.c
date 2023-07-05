@@ -40,6 +40,20 @@ do
 
 } while (voto != 0);
 
+totalVotos = cand1 + cand2 + cand3 + cand4 + cand5;
+pCand1 = (cand1 * 100) / totalVotos;
+pCand2 = (cand2 * 100) / totalVotos;
+pCand3 = (cand3 * 100) / totalVotos;
+pCand4 = (cand4 * 100) / totalVotos;
+pCand5 = (cand5 * 100) / totalVotos;
+
+printf("Total de votos: %d\n", (int)totalVotos);
+printf("Votos por el Candidato 1: %d | Porcentaje: %.2f %% \n", cand1, pCand1);
+printf("Votos por el Candidato 2: %d | Porcentaje: %.2f %% \n", cand2, pCand2);
+printf("Votos por el Candidato 3: %d | Porcentaje: %.2f %% \n", cand3, pCand3);
+printf("Votos por el Candidato 4: %d | Porcentaje: %.2f %% \n", cand4, pCand4);
+printf("Votos por el Candidato 5: %d | Porcentaje: %.2f %% \n", cand5, pCand5);
+
 return 0;
 
 }
