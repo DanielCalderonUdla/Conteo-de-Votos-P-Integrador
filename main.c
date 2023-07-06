@@ -7,7 +7,7 @@ float totalVotos, pCand1, pCand2, pCand3, pCand4, pCand5;
 
 do
 {
-    printf("Ingrese el candidato que recibió un voto (1, 2, 3, 4, 5) (Terminar = 0))\n");
+    printf("Ingrese el candidato que recibio un voto (1, 2, 3, 4, 5) (Terminar = 0))\n");
     scanf("%d", &voto);
 
     if (voto == 1)
